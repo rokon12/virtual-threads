@@ -3,6 +3,7 @@ package ca.bazlur;
 import jdk.internal.vm.Continuation;
 import jdk.internal.vm.ContinuationScope;
 
+//add this to VM Options on IntelliJ IDEA run configuration to run this example
 //--add-exports=java.base/jdk.internal.vm=ALL-UNNAMED
 public class ContinuationExample {
     public static void main(String[] args) throws InterruptedException {
