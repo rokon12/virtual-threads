@@ -7,5 +7,17 @@ Project Loom introduces virtual threads, lightweight threads that aim to dramati
 
 This include source code that I used in the demo.
 
+### Instructions
 
-It requires JDK 21.
+To execute the code, follow these steps:
+
+- Install JDK 21 early-access binaries on your system. It is recommended to use [SDKMan](https://sdkman.io/install) for easier management of multiple JDK distributions.
+
+- Install the latest version of [IntelliJ IDEA](https://www.jetbrains.com/idea/), which is a convenient IDE for running the code.
+
+Once these tools are installed, you can enjoy working through the code. 
+
+For assistance or further inquiries, reach out to me on Twitter at @bazlur_rahman. To stay informed on this subject, consider subscribing to my [newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7058296029024063489). 
+
+
+
