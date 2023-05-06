@@ -17,7 +17,7 @@ To execute the code, follow these steps:
 
 Once these tools are installed, you can enjoy working through the code. 
 
-For assistance or further inquiries, reach out to me on Twitter at @bazlur_rahman. To stay informed on this subject, consider subscribing to my [newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7058296029024063489). 
+For assistance or further inquiries, reach out to me on Twitter at [@bazlur_rahman](https://twitter.com/bazlur_rahman?t=zIS3qlQtFZWEp6a9wMHw_g&s=09). To stay informed on this subject, consider subscribing to my [newsletter](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7058296029024063489). 
 
 
 
