@@ -6,9 +6,9 @@ import java.net.Socket;
 public class DDosAttackSimulator {
     public static void main(String[] args) throws IOException {
 
-        Socket sockets[] = new Socket[10_000];
+        Socket sockets[] = new Socket[20_000];
         for (int i = 0; i < sockets.length; i++) {
-            sockets[i] = new Socket("localhost", 8080);
+            sockets[i] = new Socket("localhost", 8888);
         }
     }
 }

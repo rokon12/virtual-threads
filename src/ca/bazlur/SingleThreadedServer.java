@@ -6,14 +6,19 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class SingleThreadedServer {
     public static void main(String[] args) throws IOException {
-        var server = new ServerSocket(8080);
+        var server = new ServerSocket(8888);
+
+        ExecutorService pool = Executors.newFixedThreadPool(10_000);
 
         while (true) {
             var socket = server.accept();
-            handle(socket);
+            pool.submit(() -> handle(socket));
         }
     }
 

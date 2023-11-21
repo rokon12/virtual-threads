@@ -12,18 +12,20 @@ public class LimitVirtualThreadExample {
     public static void main(String[] args) throws InterruptedException {
         var limit = new LimitVirtualThreadExample();
 
-        var executorService = Executors.newVirtualThreadPerTaskExecutor();
+        CountDownLatch latch;
+        try (var executorService = Executors.newVirtualThreadPerTaskExecutor()) {
 
-        var latch = new CountDownLatch(1000);
-        for (int i = 0; i < 1000; i++) {
-            executorService.submit(() -> {
-                try {
-                    limit.doSomething();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                latch.countDown();
-            });
+            latch = new CountDownLatch(1000);
+            for (int i = 0; i < 1000; i++) {
+                executorService.submit(() -> {
+                    try {
+                        limit.doSomething();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    latch.countDown();
+                });
+            }
         }
 
         latch.await();
@@ -40,7 +42,7 @@ public class LimitVirtualThreadExample {
             // do something
             System.out.println("Hello world!");
 
-            Thread.sleep(10);
+            Thread.sleep(1000);
         } finally {
             semaphore.release();
         }
